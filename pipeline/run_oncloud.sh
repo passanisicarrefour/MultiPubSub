@@ -6,9 +6,9 @@ if [ "$#" -ne 3 ]; then
    exit
 fi
 
-PROJECT=$1
-BUCKET=$2
-MAIN=com.google.cloud.teleport.templates$3
+PROJECT=ps-becfr-bigdata-dev
+BUCKET=ps2bq_tmp_folder
+MAIN=com.google.cloud.teleport.templates.MultiPubSubToBigQuery
 
 echo "project=$PROJECT  bucket=$BUCKET  main=$MAIN"
 
